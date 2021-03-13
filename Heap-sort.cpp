@@ -25,7 +25,7 @@ void ArrInput(recordType a[], int& n){
 void printArr(recordType a[], int n){
 	printf("Array elements \n");
 	for (int i=0; i<n; i++){
-		printf("%d", a[i].key);
+		printf("%d  ", a[i].key);
 	}
 	printf("\n");
 }
@@ -65,10 +65,10 @@ int main(){
 	int n;
 	recordType a[100];
 	ArrInput(a,n);
-	printf("before heapsort: \n");
+	printf("Before heapsort: \n");
 	printArr(a,n);
 	HeapSort(a,n);
-	printf("after heapsort: \n");
+	printf("After heapsort: \n");
 	printArr(a,n);
 	
 }
